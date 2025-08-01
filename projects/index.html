@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .work__container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .work__img {
+            display: block;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .work__img:hover {
+            transform: scale(1.03);
+        }
+
+        .work__img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Project Gallery</h2>
+
+    <div class="work__container bd-grid">
+        <a href="/projects/Project 1.pdf" target="_blank" class="work__img">
+            <img src="assets/img/work1.jpg" alt="Motivation App">
+        </a>
+        <a href="#" target="_blank" class="work__img">
+            <img src="assets/img/work2.jpg" alt="Project 2">
+        </a>
+        <a href="#" target="_blank" class="work__img">
+            <img src="assets/img/work3.jpg" alt="Project 3">
+        </a>
+        <a href="#" target="_blank" class="work__img">
+            <img src="assets/img/work4.jpg" alt="Project 4">
+        </a>
+        <a href="#" target="_blank" class="work__img">
+            <img src="assets/img/work5.jpg" alt="Project 5">
+        </a>
+        <a href="#" target="_blank" class="work__img">
+            <img src="assets/img/work6.jpg" alt="Project 6">
+        </a>
+    </div>    
+
+</body>
+</html>
